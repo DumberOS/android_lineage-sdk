@@ -1113,6 +1113,24 @@ public final class LineageSettings {
         public static final Validator KEY_HOME_DOUBLE_TAP_ACTION_VALIDATOR =
                 new InclusiveIntegerRangeValidator(0, 10);
 
+        public static final String KEY_DPAD_SCREEN_OFF_ACTION = "key_dpad_screen_off_action";
+
+        /** @hide */
+        public static final Validator KEY_DPAD_SCREEN_OFF_ACTION_VALIDATOR =
+                new InclusiveIntegerRangeValidator(0, 1);
+
+        public static final String KEY_DPAD_MUSIC_PLAYING_ACTION = "key_dpad_music_playing_action";
+
+        /** @hide */
+        public static final Validator KEY_DPAD_MUSIC_PLAYING_ACTION_VALIDATOR =
+                new InclusiveIntegerRangeValidator(0, 1);
+
+        public static final String KEY_DPAD_CALL_ACTIVE_ACTION = "key_dpad_call_active_action";
+
+        /** @hide */
+        public static final Validator KEY_DPAD_CALL_ACTIVE_ACTION_VALIDATOR =
+                new InclusiveIntegerRangeValidator(0, 1);
+
         /**
          * Action to perform when the back key is long-pressed.
          * (Default can be configured via config_longPressOnBackBehavior)
@@ -2130,6 +2148,9 @@ public final class LineageSettings {
             VALIDATORS.put(KEY_BACK_LONG_PRESS_ACTION, KEY_BACK_LONG_PRESS_ACTION_VALIDATOR);
             VALIDATORS.put(KEY_HOME_LONG_PRESS_ACTION, KEY_HOME_LONG_PRESS_ACTION_VALIDATOR);
             VALIDATORS.put(KEY_HOME_DOUBLE_TAP_ACTION, KEY_HOME_DOUBLE_TAP_ACTION_VALIDATOR);
+            VALIDATORS.put(KEY_DPAD_SCREEN_OFF_ACTION, KEY_DPAD_SCREEN_OFF_ACTION_VALIDATOR);
+            VALIDATORS.put(KEY_DPAD_MUSIC_PLAYING_ACTION, KEY_DPAD_MUSIC_PLAYING_ACTION_VALIDATOR);
+            VALIDATORS.put(KEY_DPAD_CALL_ACTIVE_ACTION, KEY_DPAD_CALL_ACTIVE_ACTION_VALIDATOR);
             VALIDATORS.put(BACK_WAKE_SCREEN, BACK_WAKE_SCREEN_VALIDATOR);
             VALIDATORS.put(MENU_WAKE_SCREEN, MENU_WAKE_SCREENN_VALIDATOR);
             VALIDATORS.put(VOLUME_ANSWER_CALL, VOLUME_ANSWER_CALL_VALIDATOR);
