@@ -205,6 +205,10 @@
     -->
     <integer name="config_doubleTapOnHomeBehavior">0</integer>
 
+    <integer name="config_screenOffDpadBehavior">1</integer>
+    <integer name="config_musicPlayingDpadBehavior">1</integer>
+    <integer name="config_callActiveDpadBehavior">1</integer>
+
     <!-- Control the behavior when the user long presses the menu button.
             0 - Nothing
             1 - Menu key
