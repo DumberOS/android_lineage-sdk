@@ -1131,6 +1131,12 @@ public final class LineageSettings {
         public static final Validator KEY_DPAD_CALL_ACTIVE_ACTION_VALIDATOR =
                 new InclusiveIntegerRangeValidator(0, 1);
 
+        public static final String KEY_POWER_BUTTON_ACTION = "key_power_button_action";
+
+        /** @hide */
+        public static final Validator KEY_POWER_BUTTON_ACTION_VALIDATOR =
+                new InclusiveIntegerRangeValidator(0, 1);
+
         /**
          * Action to perform when the back key is long-pressed.
          * (Default can be configured via config_longPressOnBackBehavior)
@@ -2151,6 +2157,7 @@ public final class LineageSettings {
             VALIDATORS.put(KEY_DPAD_SCREEN_OFF_ACTION, KEY_DPAD_SCREEN_OFF_ACTION_VALIDATOR);
             VALIDATORS.put(KEY_DPAD_MUSIC_PLAYING_ACTION, KEY_DPAD_MUSIC_PLAYING_ACTION_VALIDATOR);
             VALIDATORS.put(KEY_DPAD_CALL_ACTIVE_ACTION, KEY_DPAD_CALL_ACTIVE_ACTION_VALIDATOR);
+            VALIDATORS.put(KEY_POWER_BUTTON_ACTION, KEY_POWER_BUTTON_ACTION_VALIDATOR);
             VALIDATORS.put(BACK_WAKE_SCREEN, BACK_WAKE_SCREEN_VALIDATOR);
             VALIDATORS.put(MENU_WAKE_SCREEN, MENU_WAKE_SCREENN_VALIDATOR);
             VALIDATORS.put(VOLUME_ANSWER_CALL, VOLUME_ANSWER_CALL_VALIDATOR);
