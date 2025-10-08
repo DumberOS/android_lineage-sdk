@@ -1698,6 +1698,17 @@ public final class LineageSettings {
                 sBooleanValidator;
 
         /**
+         * Whether pressing numeric keys while the screen is off wakes the device when a PIN is set
+         * 0 = off, 1 = on
+         */
+        public static final String LOCKSCREEN_WAKE_ON_NUMERIC_KEY =
+                "lockscreen_wake_on_numeric_key";
+
+        /** @hide */
+        public static final Validator LOCKSCREEN_WAKE_ON_NUMERIC_KEY_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Whether keyguard will rotate to landscape mode
          * 0 = false, 1 = true
          */
@@ -2219,6 +2230,8 @@ public final class LineageSettings {
             VALIDATORS.put(BLUETOOTH_ACCEPT_ALL_FILES, BLUETOOTH_ACCEPT_ALL_FILES_VALIDATOR);
             VALIDATORS.put(LOCKSCREEN_PIN_SCRAMBLE_LAYOUT,
                     LOCKSCREEN_PIN_SCRAMBLE_LAYOUT_VALIDATOR);
+            VALIDATORS.put(LOCKSCREEN_WAKE_ON_NUMERIC_KEY,
+                    LOCKSCREEN_WAKE_ON_NUMERIC_KEY_VALIDATOR);
             VALIDATORS.put(LOCKSCREEN_ROTATION, LOCKSCREEN_ROTATION_VALIDATOR);
             VALIDATORS.put(SHOW_ALARM_ICON, SHOW_ALARM_ICON_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_IME_SWITCHER, STATUS_BAR_IME_SWITCHER_VALIDATOR);
