@@ -754,6 +754,7 @@ package lineageos.providers {
     field public static final java.lang.String KEY_MENU_ACTION = "key_menu_action";
     field public static final java.lang.String KEY_MENU_LONG_PRESS_ACTION = "key_menu_long_press_action";
     field public static final java.lang.String LOCKSCREEN_PIN_SCRAMBLE_LAYOUT = "lockscreen_scramble_pin_layout";
+    field public static final java.lang.String LOCKSCREEN_WAKE_ON_NUMERIC_KEY = "lockscreen_wake_on_numeric_key";
     field public static final java.lang.String LOCKSCREEN_ROTATION = "lockscreen_rotation";
     field public static final java.lang.String LONG_SCREEN_APPS = "long_screen_apps";
     field public static final java.lang.String MENU_WAKE_SCREEN = "menu_wake_screen";
