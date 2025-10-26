@@ -88,11 +88,8 @@ public class TrustInterfaceService extends LineageSystemService {
         if (phase == PHASE_BOOT_COMPLETED) {
             mNotificationManager = mContext.getSystemService(NotificationManager.class);
 
-            // Onboard
             if (!hasOnboardedUser()) {
-                postOnBoardingNotification();
-                registerLocaleChangedReceiver();
-                return;
+                markUserOnboarded();
             }
 
             runTestInternal();
@@ -336,6 +333,11 @@ public class TrustInterfaceService extends LineageSystemService {
     private boolean hasOnboardedUser() {
         return LineageSettings.System.getInt(mContext.getContentResolver(),
                 LineageSettings.System.TRUST_INTERFACE_HINTED, 0) == 1;
+    }
+
+    private void markUserOnboarded() {
+        LineageSettings.System.putInt(mContext.getContentResolver(),
+                LineageSettings.System.TRUST_INTERFACE_HINTED, 1);
     }
 
     private void registerLocaleChangedReceiver() {
