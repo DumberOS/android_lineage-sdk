@@ -440,6 +440,10 @@ public class LineageDatabaseHelper extends SQLiteOpenHelper{
 
             loadBooleanSetting(stmt, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE,
                     R.bool.def_notification_pulse_custom_enable);
+            loadBooleanSetting(stmt, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_ENABLE,
+                    R.bool.def_notification_pulse_call_enable);
+            loadBooleanSetting(stmt, LineageSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_ENABLE,
+                    R.bool.def_notification_pulse_vmail_enable);
 
             loadBooleanSetting(stmt, LineageSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION,
                     R.bool.def_swap_volume_keys_on_rotation);

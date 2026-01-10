@@ -1894,6 +1894,16 @@ public final class LineageSettings {
                 sNonNegativeIntegerValidator;
 
         /**
+         * Whether to allow missed call notifications to use the LED
+         */
+        public static final String NOTIFICATION_LIGHT_PULSE_CALL_ENABLE =
+                "notification_light_pulse_call_enable";
+
+        /** @hide */
+        public static final Validator NOTIFICATION_LIGHT_PULSE_CALL_ENABLE_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * What color to use for the voicemail notification LED
          */
         public static final String NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR =
@@ -1922,6 +1932,16 @@ public final class LineageSettings {
         /** @hide */
         public static final Validator NOTIFICATION_LIGHT_PULSE_VMAIL_LED_OFF_VALIDATOR =
                 sNonNegativeIntegerValidator;
+
+        /**
+         * Whether to allow voicemail notifications to use the LED
+         */
+        public static final String NOTIFICATION_LIGHT_PULSE_VMAIL_ENABLE =
+                "notification_light_pulse_vmail_enable";
+
+        /** @hide */
+        public static final Validator NOTIFICATION_LIGHT_PULSE_VMAIL_ENABLE_VALIDATOR =
+                sBooleanValidator;
 
         /**
          * Whether to use the custom LED values for the notification pulse LED.
@@ -2257,12 +2277,16 @@ public final class LineageSettings {
                     NOTIFICATION_LIGHT_PULSE_CALL_LED_ON_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_LIGHT_PULSE_CALL_LED_OFF,
                     NOTIFICATION_LIGHT_PULSE_CALL_LED_OFF_VALIDATOR);
+            VALIDATORS.put(NOTIFICATION_LIGHT_PULSE_CALL_ENABLE,
+                    NOTIFICATION_LIGHT_PULSE_CALL_ENABLE_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR,
                     NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_LIGHT_PULSE_VMAIL_LED_ON,
                     NOTIFICATION_LIGHT_PULSE_VMAIL_LED_ON_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_LIGHT_PULSE_VMAIL_LED_OFF,
                     NOTIFICATION_LIGHT_PULSE_VMAIL_LED_OFF_VALIDATOR);
+            VALIDATORS.put(NOTIFICATION_LIGHT_PULSE_VMAIL_ENABLE,
+                    NOTIFICATION_LIGHT_PULSE_VMAIL_ENABLE_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE,
                     NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES,
