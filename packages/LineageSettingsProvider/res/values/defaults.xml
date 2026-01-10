@@ -64,6 +64,8 @@
     <!-- Default value for notification LED customization -->
     <bool name="def_notification_pulse_custom_enable">false</bool>
     <string name="def_notification_pulse_custom_value"></string>
+    <bool name="def_notification_pulse_call_enable">true</bool>
+    <bool name="def_notification_pulse_vmail_enable">true</bool>
 
     <!-- Default value for swapping volume keys on rotation -->
     <bool name="def_swap_volume_keys_on_rotation">false</bool>
