@@ -47,3 +47,7 @@ $(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/org.li
 # Purge out the api stubs timestamp files (they're used as a dependency for checkapi-lineage)
 $(call add-clean-step, rm -rf $(OUT_DIR)/target/common/docs/lineage-api-stubs*)
 $(call add-clean-step, rm -rf $(OUT_DIR)/target/common/docs/lineage-system-api-stubs*)
+
+# Installed filenames changed; logical module and package identities are unchanged.
+$(call add-clean-step, rm -f $(TARGET_OUT_JAVA_LIBRARIES)/org.lineageos.platform.jar $(TARGET_OUT_JAVA_LIBRARIES)/org.lineageos.platform.jar.fsv_meta $(TARGET_OUT_JAVA_LIBRARIES)/org.lineageos.platform-res.apk $(TARGET_OUT_JAVA_LIBRARIES)/org.lineageos.platform-res.apk.fsv_meta)
+$(call add-clean-step, rm -f $(TARGET_OUT_JAVA_LIBRARIES)/oat/*/org.lineageos.platform.odex $(TARGET_OUT_JAVA_LIBRARIES)/oat/*/org.lineageos.platform.vdex $(TARGET_OUT_JAVA_LIBRARIES)/oat/*/org.lineageos.platform.odex.fsv_meta $(TARGET_OUT_JAVA_LIBRARIES)/oat/*/org.lineageos.platform.vdex.fsv_meta)

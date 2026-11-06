@@ -39,7 +39,7 @@ lineage_framework_res_R_stamp := \
     $(call intermediates-dir-for,APPS,org.lineageos.platform-res,,COMMON)/src/R.stamp
 LOCAL_ADDITIONAL_DEPENDENCIES := $(lineage_framework_res_R_stamp)
 
-$(lineage_framework_module): | $(dir $(lineage_framework_module))org.lineageos.platform-res.apk
+$(lineage_framework_module): | $(dir $(lineage_framework_module))org.dumberos.platform-res.apk
 
 lineage_framework_built := $(call java-lib-deps, org.lineageos.platform)
 
